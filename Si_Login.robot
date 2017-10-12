@@ -2,32 +2,37 @@
 Library                 Selenium2Library
 
 *** Variables ***
-${Browser}              gc
+${Browser}              Firefox
 ${SiteUrl}              https://si-akang.divusi.com/
-${Username}             depa.panjie
-${Password}             depa147!
+${Username}             enter_your_username_here
+${Password}             enter_your_password_here
 
 *** Test Cases ***
 LoginTest
     Open browser to login page
     Click close
-    # Enter username
-    # Enter password
-    # Close browser
+    Enter username
+    Enter password
+    Click login
+    Verify logged
 
 *** Keywords ***
 Open browser to login page
-    Open Browser        ${SiteUrl}         ${Browser}
-    # Maximize Browser Window
+    Open Browser        	${SiteUrl}	         ${Browser}
 
 Click close
-    Click Element                    sizzle=.btn.btn-white
+    Page Should Contain			Divusi Point Special Challenge 1
+    Click Element           	sizzle=.btn.btn-white
 
-# Enter username
-#     Input Text          name=username      ${username}
+Enter username
+    Input Text          		name=username      ${username}
 
-# Enter password
-#     Input Text          name=password      ${password}
+Enter password
+    Input Text          		name=password      ${password}
 
-# Close browser
-    # Close Browser
+Click login
+	Click Element				sizzle=.btn.btn-success.block.full-width.m-b
+
+Verify logged
+	Page Should Contain			Depa Panjie (Karyawan)
+	Close Browser
