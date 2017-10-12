@@ -34,5 +34,5 @@ Click login
 	Click Element				sizzle=.btn.btn-success.block.full-width.m-b
 
 Verify logged
-	Page Should Contain			Depa Panjie (Karyawan)
+	Page Should Contain			write_your_fullname_here
 	Close Browser
