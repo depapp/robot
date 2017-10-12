@@ -22,7 +22,7 @@ Buka broswer dan alamat website
 
 Klik tombol pengumuman
     Page Should Contain         PENGUMUMAN
-    Click Element               link=https://pmb.unpar.ac.id/pengumuman_kelulusan
+    Click Link                  href=https://pmb.unpar.ac.id/pengumuman_kelulusan
 
 Isi No PMB/PMDK
     Page Should Contain         PENGUMUMAN KELULUSAN UNPAR TAHUN AKADEMIK
