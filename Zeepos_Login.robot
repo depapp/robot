@@ -24,5 +24,5 @@ Login
     Click Button                    id=btn-submit
 
 Verify logged account
-    Wait Until Page Contains        Dashboard                       timeout=20.0
+    Wait Until Page Contains        Dashboard                       timeout=10.0
     Close Browser
