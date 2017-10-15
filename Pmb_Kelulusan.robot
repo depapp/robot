@@ -18,11 +18,11 @@ Cek kelulusan
 
 *** Keywords ***
 Buka broswer dan alamat website
-    Open Browser        ${Browser}          ${Alamat}
+    Open Browser        ${Alamat}           ${Browser}
 
 Klik tombol pengumuman
     Page Should Contain         PENGUMUMAN
-    Click Link                  href=https://pmb.unpar.ac.id/pengumuman_kelulusan
+    Click Link                  sizzle=.btn.btn-w-m.btn-default.col-md-2.col-md-offset-1
 
 Isi No PMB/PMDK
     Page Should Contain         PENGUMUMAN KELULUSAN UNPAR TAHUN AKADEMIK

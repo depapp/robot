@@ -32,9 +32,10 @@ Click login
     Wait Until Page Contains            Silahkan pilih role yang bersesuaian.
 
 Select role
-    # Select From List By Value       name=role       peserta-usm#01/USM/03/2016
+    #Select From List By Value       name=role       peserta-usm#01/USM/03/2016
     Select From List By Label           name=role           Administrator ( )
 
 Click pilih
     Click Element                       class=btn.btn-primary.block.full-width.m-b
     Wait Until Page Contains            Ivan Nugraha            timeout=10.0
+    Close Browser
