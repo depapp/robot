@@ -4,8 +4,8 @@ Library                 Selenium2Library
 *** Variables ***
 # ${Browser}              Firefox
 ${SiteUrl}              https://si-akang.divusi.com/
-${Username}             depa.panjie
-${Password}             depa147!
+${Username}             username
+${Password}             password
 
 *** Test Cases ***
 LoginTest
@@ -34,5 +34,5 @@ Click login
 	Click Element				sizzle=.btn.btn-success.block.full-width.m-b
 
 Verify logged
-	Page Should Contain			Depa Panjie
+	Page Should Contain			fullname
 	Close Browser
