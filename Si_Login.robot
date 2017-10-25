@@ -22,7 +22,7 @@ Open browser to login page
 
 Click close
     Page Should Contain			Divusi Point Special Challenge 1
-    Click Element           	sizzle=.btn.btn-white
+    Click Element           	xpath=//*[@id='myModal']/div/div/div[1]/button
 
 Enter username
     Input Text          		name=username      ${username}
@@ -31,7 +31,7 @@ Enter password
     Input Text          		name=password      ${password}
 
 Click login
-	Click Element				sizzle=.btn.btn-success.block.full-width.m-b
+	Click Element				xpath=html/body/div[2]/div[1]/div[2]/div/form/button
 
 Verify logged
 	Page Should Contain			fullname
